@@ -1,12 +1,40 @@
 # st
 
-FIXME: description
+Spatial-Temporal map-matching library.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Download from http://sensuslabs.com/FIXME.
 
 ## Usage
+
+### Install
+
+Install [lein](http://leiningen.org/#install)
+
+### Setup
+
+```bash
+lein deps
+```
+
+### Test
+
+```bash
+lein run
+```
+
+### Compile
+
+```bash
+lein uberjar
+```
+
+### Run
+
+```bash
+java -jar target/st-0.1.0-SNAPSHOT-standalone.jar
+```
 
 FIXME: explanation
 
@@ -18,9 +46,7 @@ FIXME: listing of options this app accepts.
 
 ## ST
 
-ST map-matching lib
-
-
+ST map-matching lib.
 
 ### Bugs
 
@@ -33,5 +59,4 @@ Not so far
 ## License
 
 Copyright © 2014, Sensuslabs
-
 BSD 3-Clause License.
