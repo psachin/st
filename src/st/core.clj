@@ -1,7 +1,8 @@
 (ns st.core
-  (:require [clojure.math.numeric-tower :as math])
+  (:require [clojure.math.numeric-tower])
   (:gen-class))
 
+(use 'clojure.math.numeric-tower)
 
 (defn tolerance-radius
   "Tolerance radius which should build a candidate segment based on
@@ -37,7 +38,7 @@ SIGMA:
 "
   [nodes ticks variance mu sigma xji]
   (let* [pi 3.14
-         first-term (/ 1 (math/sqrt (* 2 pi variance)))
+         first-term (/ 1 (sqrt (* 2 pi variance)))
          second-term (/ (- (* xji xji) (* mu mu)) (* 2 (* sigma sigma)))
          ]
     (println (* first-term second-term))
@@ -68,4 +69,5 @@ T: time(in seconds)."
   (spatial [8,9] [6,7] 1.5 3 5 1.2)
   (temporal 2.0 7 3.2)
   (tolerance-radius 2 3)
-  (fin-result 2 3))
+  (fin-result 2 3)
+  (println (expt 2 200)))
