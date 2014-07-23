@@ -4,7 +4,7 @@ Spatial-Temporal map-matching library.
 
 ## Installation
 
-Download from http://sensuslabs.com/FIXME.
+Download from https://github.com/psachin/st.
 
 ## Usage
 
@@ -58,5 +58,5 @@ Not so far
 
 ## License
 
-Copyright © 2014, Sensuslabs
+Copyright © 2014, Sachin Patil.
 BSD 3-Clause License.
